@@ -7,3 +7,5 @@ spacy
 xgboost
 jupyter
 ipykernel
+pyarrow
+torch
