@@ -77,6 +77,7 @@ https://drive.google.com/drive/u/0/folders/1tVEqkmJ0jLE7XxFi8P7CKOASge1pr6ZL
 - Includes profile attributes (followers, account info, activity stats)  
 
 ### Final Processed Outputs (`final_outputs/`)
+These are intermediate datasets generated at different stages of the pipeline after sampling and feature engineering.  
 
 **df_edges_final.parquet**  
 - Final edge list after sampling  
@@ -88,9 +89,8 @@ https://drive.google.com/drive/u/0/folders/1tVEqkmJ0jLE7XxFi8P7CKOASge1pr6ZL
 - Removes irrelevant or unused tweets  
 
 **df_tweets_final.parquet**  
-- Fully processed tweet dataset  
-- Includes engineered features or embeddings  
-- Optimized for model input  
+- parquet version of the csv file df_tweets_filtered.csv
+- optimised for efficient processing
 
 **df_tweets_model.csv**  
 - Model-ready tweet dataset  
@@ -109,6 +109,30 @@ https://drive.google.com/drive/u/0/folders/1tVEqkmJ0jLE7XxFi8P7CKOASge1pr6ZL
 - Final model-ready user dataset  
 - Includes user features, labels, and engineered features  
 - Direct input into the graph model  
+
+---
+
+## Data Flow and File Relationships
+
+The project follows a sequential pipeline where outputs from each stage serve as inputs to the next:
+
+- **sampling.ipynb**  
+  Selects a balanced subset of users (~20k) and extracts the corresponding edges, tweets, and user metadata  
+
+- **fe_tweets.ipynb**  
+  Processes sampled tweet data and generates tweet-level features  
+
+- **fe_user_metadata.ipynb**  
+  Cleans and prepares user-level features from metadata  
+
+- **sampling + feature engineering outputs** are then aligned to ensure all datasets contain the same set of users  
+
+- **graph.ipynb**  
+  Combines:
+  - User features (`df_users_model.parquet`)  
+  - Tweet features (`df_tweets_model.csv`)  
+  - Graph structure (`df_edges_final.parquet`)  
+  to train and evaluate the RGCN model  
 
 ---
 
