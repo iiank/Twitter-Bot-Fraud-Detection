@@ -7,3 +7,7 @@ spacy
 xgboost
 jupyter
 ipykernel
+torch
+torch-geometric
+networkx
+emoji
