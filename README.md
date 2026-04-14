@@ -17,6 +17,8 @@ Detecting Twitter bots using feature engineering and graph-based learning (RGCN)
 
 ### Sampling from Raw TwiBot22 Dataset
 
+The following ipynb files are used to generate the reported performance.
+
 **sampling.ipynb**  
 - Implements balanced seed-based expansion sampling on the raw graph dataset  
 - Produces a final sample of ~20k users  
@@ -52,7 +54,10 @@ Detecting Twitter bots using feature engineering and graph-based learning (RGCN)
 ## Datasets
 
 Google Drive link:  
-https://drive.google.com/drive/u/0/folders/1tVEqkmJ0jLE7XxFi8P7CKOASge1pr6ZL  
+https://drive.google.com/drive/u/0/folders/1tVEqkmJ0jLE7XxFi8P7CKOASge1pr6ZL
+
+GitHub link:
+https://github.com/ImSoTired223/BT4222
 
 ---
 
@@ -92,12 +97,13 @@ These are intermediate datasets generated at different stages of the pipeline af
 - parquet version of the csv file df_tweets_filtered.csv
 - optimised for efficient processing
 
-**df_tweets_model.csv**  
+**df_tweets_model.parquet**  
 - Model-ready tweet dataset  
 - Contains processed and selected tweet-level features aligned with sampled users  
 - Includes features used for downstream modeling (embeddings or aggregated tweet signals)  
-- Serves as input for integrating tweet information into the graph model  
-
+- Serves as input for integrating tweet information into the graph model 
+- optimised for efficient processing
+ 
 **df_user_meta_full.parquet**  
 - Cleaned and processed user metadata  
 - Includes all users before sampling  
