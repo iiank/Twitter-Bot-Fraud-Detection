@@ -7,4 +7,17 @@ spacy
 xgboost
 jupyter
 ipykernel
+<<<<<<< HEAD
+pyarrow
+torch
+=======
+torch
+torch-geometric
+networkx
+emoji
+torch_scatter
+torch-sparse
+transformers
+>>>>>>> bdda0c6a63e68b4c719b10dee362a940294a5a3e
+
 ijson
