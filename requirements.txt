@@ -7,3 +7,4 @@ spacy
 xgboost
 jupyter
 ipykernel
+ijson
