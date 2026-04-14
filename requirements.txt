@@ -11,3 +11,5 @@ torch
 torch-geometric
 networkx
 emoji
+torch_scatter
+torch-sparse
