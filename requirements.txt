@@ -11,3 +11,7 @@ torch
 torch-geometric
 networkx
 emoji
+transformers
+datetime
+re
+ast
