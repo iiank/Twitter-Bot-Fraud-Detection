@@ -1,4 +1,4 @@
-# BT4222 — Twitter Bot Detection
+# Twitter Bot Fraud Detection
 
 Detecting Twitter bots using feature engineering and graph-based learning (RGCN).
 
@@ -53,11 +53,6 @@ The following ipynb files are used to generate the reported performance.
 
 ## Datasets
 
-Google Drive link:  
-https://drive.google.com/drive/u/0/folders/1tVEqkmJ0jLE7XxFi8P7CKOASge1pr6ZL
-
-GitHub link:
-https://github.com/ImSoTired223/BT4222
 
 ---
 
