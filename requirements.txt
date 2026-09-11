@@ -16,5 +16,5 @@ emoji
 torch_scatter
 torch-sparse
 transformers
-
 ijson
+duckdb
