@@ -21,7 +21,7 @@ The following ipynb files are used to generate the reported performance.
 
 **sampling.ipynb**  
 - Implements balanced seed-based expansion sampling on the raw graph dataset  
-- Produces a final sample of ~20k users  
+- Produces a final sample of ~40k users  
 - Fetches relevant tweets for sampled users  
 - Aligns tweet and user subsets with sampled graph nodes  
 
@@ -118,7 +118,7 @@ These are intermediate datasets generated at different stages of the pipeline af
 The project follows a sequential pipeline where outputs from each stage serve as inputs to the next:
 
 - **sampling.ipynb**  
-  Selects a balanced subset of users (~20k) and extracts the corresponding edges, tweets, and user metadata  
+  Selects a balanced subset of users (~40k) and extracts the corresponding edges, tweets, and user metadata  
 
 - **fe_tweets.ipynb**  
   Processes sampled tweet data and generates tweet-level features  
