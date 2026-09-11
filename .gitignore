@@ -1,2 +1,3 @@
-**/datasets/
-**/old_model/
+*datasets/
+parquet/
+.vscode
