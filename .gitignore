@@ -1,3 +1,6 @@
 *datasets/
 parquet/
 .vscode
+BT4222-main/
+datasets (old)/
+.duckdb_temp/
